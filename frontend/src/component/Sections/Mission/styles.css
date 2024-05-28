@@ -1,0 +1,144 @@
+
+
+.section-mission{
+    margin-top: 125px;
+    padding-left: 48px; 
+    padding-right: 48px; 
+    margin-bottom: 75px;
+
+
+}
+.title-section{
+    text-align: center;
+}
+
+.title-mission{
+    font-family: Corben, sans-serif;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 108%;
+}
+
+.title-section p{
+    text-align: left;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.section-card-banner{
+    text-align: center;
+    /* color: var(--accent-light-3); */
+}
+
+
+.card-banner{
+    margin-top: 30px;
+    padding: 48px 48px 56px;
+    border-radius: 16px;
+    position:relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+.card-banner:hover {
+    transform: scale(1.03);
+}
+
+.card-grap{
+    grid-column: 24px;
+    grid-row-gap: 24px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    z-index: 1;
+    position: relative;
+}
+
+
+.card-number{
+    margin-top: 4px;
+    width: 24px;
+    color: var(--accent-dark)
+}
+.card-number-text{
+    padding-top: 0px;
+    margin-top:0px;
+}
+
+.card-content{
+    max-width: 670px;
+    margin-left: 20px;
+}
+
+.card-content-title{
+    margin-top: 4px;
+    margin-bottom: 21px;
+    /* max-width: 370px; */
+    text-align: left;
+    font-family: Corben, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 108%;
+}
+
+.card-content-text{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: justify;
+    /* overflow: auto; */
+}
+
+.card-banner .background-image-card{
+    opacity: 0.25;
+    z-index: 0;
+    width: 3286px;
+    height: 3286px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: 50% 50%;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    max-width: 100%;
+    pointer-events: none;
+    display: inline-block;
+    border: 0;
+}
+
+.decor-image-card{
+    z-index: 0;
+    width: 36vw;
+    height: auto;
+    max-width: 420px;
+    position: absolute;
+    top: 0%;
+    bottom: auto;
+    left: auto;
+    right: 100px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    opacity: 0.6;
+    object-position: 50% 50%;
+    transition: transform 0.3s
+}
+
+
+@media screen and (max-width: 767px){
+    .section-mission{
+        padding-left: 24px;
+        padding-right: 24px;
+        display: block;
+    }
+    .decor-image-card{
+        position: static;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .decor-image-card {
+        position: static;
+        margin: 0 auto;
+
+    }
+}

@@ -1,0 +1,160 @@
+.section-our-impact-container{
+    background-color:  #dfecfb;;
+    padding: 20px;
+}
+.section-our-impact{
+    margin-top: 125px;
+    margin-bottom: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1256px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+
+.section-container{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.our-impact-title{
+    max-width: 43%;
+    margin-right: 20px;
+}
+
+.our-impact-title .txt-1{
+    color: var(--green-1);
+    margin-bottom: 0px;
+    
+}
+
+.our-impact-title .impact-txt{
+    margin-bottom: 10px;
+}
+
+
+.our-impact-title .impact-title{
+    color:var(--primary-blue);
+    font-family: Corben, sans-serif;
+    font-size: 52px;
+    font-weight: 400;
+    line-height: 108%;
+    margin-top: 0px;
+}
+.our-impact-right{
+    width: 100%;
+    max-width: 632px;
+    align-self: stretch;
+    position: relative;
+}
+
+.img-container{
+    border-radius: 16px;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    transform: translate(0);
+    max-height:600px;
+    max-width: 90%;
+    height: 100%;
+    margin-left: auto;
+}
+.img-container img{
+    object-fit: cover;
+    height: 100%;
+}
+
+.container-cards-impact{
+    /* max-width: 64%; */
+    position: absolute;
+    bottom: 65px;
+    left: 0;
+}
+
+.container-cards-impact .card-info{
+    /* background-color: white; */
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 10px;
+    border-radius: 25px;
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 29px 22px;
+    max-width: 400px;
+}
+
+.container-cards-impact .card-details h4{
+    margin: 0;
+    margin-left: 10px;
+    /* color:var(--primary-blue); */
+}
+.container-cards-impact .card-details p{
+    margin: 0;
+    margin-left: 10px;
+
+}
+
+
+
+.btn-donate-impact{
+    margin: 0 auto;
+    z-index: 10;
+    padding: 10px 15px;
+    border: 1.5px solid var(--primary-blue);
+    color: var(--primary-blue);
+    text-align: center;
+    border-radius: 10px;
+}
+
+.btn-donate:hover {
+    background-color: var(--primary-blue);
+    border: var(--primary-blue);
+    color: var(--accent-light-1);
+    transition: transform .3s, border-color .3s, color .3s, background-color .3s;
+}
+
+@media screen and (max-width: 767px){
+    .section-our-impact-container{
+        padding: 10px 0;
+    }
+    .section-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    .section-our-impact{
+        padding: 0px;
+    }
+    .img-container{
+        display: none;
+    }
+    .container-cards-impact{
+        position: relative;
+    }
+    .our-impact-title{
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+    .our-impact-data{
+        grid-template-columns: 1fr;
+    }
+    .our-impact-right{
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        align-self: stretch;
+        position: relative;
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    /* .section-container {
+        flex-direction: column;
+    } */
+}

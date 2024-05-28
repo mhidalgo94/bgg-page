@@ -1,7 +1,9 @@
 import Header from "./component/Header/Header"
 import NavBar from "./component/NavBar/NavBar"
 import Presentaton from "./component/Sections/Presentations/Presentaton"
-import HowWork from "./component/Sections/How-work/HowWork"
+import Mission from "./component/Sections/Mission/Mission"
+import OurImpact from "./component/Sections/OurImpact/OurImpact"
+
 function App() {
 
   return (
@@ -9,7 +11,8 @@ function App() {
       <NavBar />
       <Header />
       <Presentaton />
-      <HowWork />
+      <Mission />
+      <OurImpact />
     </div>
   )
 }
