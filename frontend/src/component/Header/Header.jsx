@@ -1,6 +1,5 @@
 import React from 'react'
 import './styles.css'
-import video from '../../assets/videos/ocean_video.mp4'
 
 export default function Header() {
   return (
