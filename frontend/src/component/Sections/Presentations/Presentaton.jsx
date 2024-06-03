@@ -11,8 +11,8 @@ export default function Presentaton() {
   return (
     <section className='presentations'>
         <section className='section-title'>
-             <h1 className='title-presentation' >Changing Nature</h1>
-            <h2 className='subtitle-presentation'>Uniting Hearts</h2>
+             <h1 className='title-presentation' >Small actions,</h1>
+            <h2 className='subtitle-presentation'> Big impacts.</h2>
         </section>
         <div className='cards'>
             <div className='card-only-img'>

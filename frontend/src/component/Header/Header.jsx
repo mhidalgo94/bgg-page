@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <section className='header'>
         <video playsInline autoPlay muted loop id="bgVideo"> 
-         <source src={video} type="video/mp4" />
+         <source src="https://videos.pexels.com/video-files/3571264/3571264-hd_1280_720_30fps.mp4" type="video/mp4" />
             Tu navegador no soporta videos HTML5.
         </video>
         <div className='overlay'></div>

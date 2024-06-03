@@ -74,7 +74,6 @@
 }
 
 .container-cards-impact .card-info{
-    /* background-color: white; */
     background-color: rgba(255, 255, 255, 0.8);
     margin-top: 10px;
     border-radius: 25px;
@@ -82,7 +81,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: space-between; */
     padding: 29px 22px;
     max-width: 400px;
 }
@@ -97,8 +95,6 @@
     margin-left: 10px;
 
 }
-
-
 
 .btn-donate-impact{
     margin: 0 auto;

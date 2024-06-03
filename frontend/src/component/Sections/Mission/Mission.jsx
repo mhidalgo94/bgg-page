@@ -9,7 +9,7 @@ export default function Mission() {
 
     const dataCard = [
         {
-            number: 1, 
+            number: "01", 
             title: 'Refuse', 
             text: 'REFUSE disposable plastic & single-serving items whenever and wherever possible. As the consumer, the impact of refusing makes a clear statement to the producer that you will not take on the responsibility of excess waste. Choose items that are not packaged in plastic, and carry your own bags, containers, and utensils. Buy in bulk and make our own serving sizes in reusable containers.  Refuse to support brands and businesses that do not support your environmental beliefs!', 
             image: svgRefuse, 
@@ -18,7 +18,7 @@ export default function Mission() {
 
         },
         {
-            number: 2, 
+            number: "02", 
             title: 'Reduce', 
             text: 'Make decisions that REDUCE  your waste footprint. Cut down on your consumption of goods overall and especially those that contain excessive plastic packaging and parts. Reducing waste is a conscious choice and anyone can participate on any level.  Use less.  Make due with what you already have whenever possible.', 
             image: svgReduce, 
@@ -27,7 +27,7 @@ export default function Mission() {
 
         },
         {
-            number: 3, 
+            number: "03", 
             title: 'Reuse', 
             text: 'REUSE durable, non-toxic straws, utensils, to-go containers, bottles, bags, and other everyday items. Choose glass, paper, stainless steel, wood, ceramic and bamboo over plastic & polystrene (styrofoam). By reusing items, you are diverting waste from the landfill and preventing the creation of even more virgin materials.  If you must buy something new, try to buy products made with recycled materials.', 
             image: svgReuse, 
@@ -36,7 +36,7 @@ export default function Mission() {
 
         },
         {
-            number: 4, 
+            number:"04", 
             title: 'Recycling', 
             text: "RECYCLING is a tough one.  It is a VERY small part of a much bigger solution to our waste.  Unfortunately, many of us count recycling as our primary eco-friendly behavior.  We continue to buy products that we should not be buying with the idea that they will be recycled so it's ok!  Not TRUE!  Here are the facts.  Only 9% of all plastic is recycled globally and only 7% in the USA.  Contamination rates are high with recyclables and much of what you THINK is being recycled actually ends up in the landfill. IF your recyclables do make it through the recycle sorting process EMPTY, CLEAN & DRY, then we must rely on the market to purchase these recycled materials.  Unfortunately the market for many recycled materials is weak and these items often end up in the landfill due to no demand.  As long as virgin plastic is cheaper than recycled plastic, much of the plastic that we consume will continue to be landfilled. Recycling should be the last resort in the waste hierarchy and not an excuse to keep old buying habits.", 
             image: svgRecycling, 
