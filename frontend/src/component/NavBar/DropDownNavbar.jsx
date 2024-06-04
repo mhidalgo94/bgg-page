@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useState, useEffect,useRef } from 'react';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import './dropdown.css';
 
 
 export default function DropDownNavbar({values}) {
     const {pages} = values;
+    const dropdownRef = useRef(null);
 
     const [openDroptown, setOpenDroptonw] = useState(false);
 
@@ -12,8 +13,22 @@ export default function DropDownNavbar({values}) {
         setOpenDroptonw(!openDroptown);
     }
 
+    const handleClickOutside = (event) => {
+        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+            setOpenDroptonw(false);
+        }
+      };
+
+    useEffect(() => {
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+          document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+    
+
   return (
-        <div >
+        <div>
             <div className="nav-menu-links">
                     <h6 className="nav-menu-link" 
                         onClick={toggleDroptown}
@@ -24,7 +39,7 @@ export default function DropDownNavbar({values}) {
                     </h6>
             </div>
             {pages.length > 0 && 
-                <nav className={`dropdown-menu ${openDroptown ? 'show' : ''}`} >
+                <nav className={`dropdown-menu ${openDroptown ? 'show' : ''}`} ref={dropdownRef} >
                     <div className='dropdown-items' >
                         {values.pages.map((val, index)=>{
                             return (
