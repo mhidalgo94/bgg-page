@@ -4,7 +4,7 @@ import Presentaton from "./component/Sections/Presentations/Presentaton"
 import Mission from "./component/Sections/Mission/Mission"
 import OurImpact from "./component/Sections/OurImpact/OurImpact"
 import ContactUs from "./component/Sections/ContactUs/ContactUs"
-
+import Footer from './component/Footer/Footer'
 function App() {
 
   return (
@@ -15,6 +15,7 @@ function App() {
       <Mission />
       <OurImpact />
       <ContactUs />
+      <Footer />
     </div>
   )
 }

@@ -22,7 +22,9 @@
     --grey: #eef1f4;
     --grey-600: #5d6a6a;
     --grey-300: #a8b0b0;
-    --primary-blue:#1494d8;
+    /* --primary-blue:#1494d8; */
+    --primary-blue:#1e98fd;
+
     --primary-blue-light:#a5dfff;
     --primary-blue-dark:#1493d8;
     --primary-blue-lite:#74c0ea;

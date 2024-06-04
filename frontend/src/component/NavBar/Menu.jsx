@@ -1,6 +1,4 @@
 import './stylesres.css'
-import svg_facebook from '../../assets/svg/facebook.svg'
-import svg_linkedin from '../../assets/svg/linkedin.svg'
 
 export default function Menu({openMenu}) {
   return (
