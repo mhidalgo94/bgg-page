@@ -285,7 +285,9 @@
         padding:0px;
     }
 
-    
+    .form-block{
+        padding: 20px 20px 36px;
+    }
 
     .contactUs-cards .card-items {
         grid-template-columns: 1fr;

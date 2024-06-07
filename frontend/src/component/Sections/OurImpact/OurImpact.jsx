@@ -9,7 +9,7 @@ import {motion} from 'framer-motion';
 const text = {
     initial :{
         left: '-400px',
-        position: 'relative',
+        // position: 'relative',
         opacity: 0
     },
     animate:{
@@ -75,7 +75,7 @@ export default function OurImpact() {
     <section className='section-our-impact-container'>
     <div className='section-our-impact'>
         <div className='section-container'>
-            <div className="our-impact-title">
+            <motion.div className="our-impact-title" initial={text.initial} whileInView={text.animate}>
                 <motion.p className='txt-1' initial={text.initial} whileInView={text.animate} >Our achievements</motion.p>
                 <motion.h1 className='impact-title' initial={text.initial} whileInView={text.animate} >Our Impact</motion.h1>
                 <motion.p className='impact-txt' initial={text.initial} whileInView={text.animate} >
@@ -84,7 +84,7 @@ export default function OurImpact() {
                 {/* <div style={{marginTop:'30px'}}>
                     <DonateBtn />
                 </div> */}
-            </div>
+            </motion.div>
             <div className='our-impact-right'>
                 <div className='img-container'>
                     <motion.img src={imgBackground} alt="Background image Our Impact" initial={motImage.initial} whileInView={motImage.animate}/>
