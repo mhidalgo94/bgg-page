@@ -6,7 +6,7 @@ import img4 from '../../../assets/images/card-4.jpeg';
 import img5 from '../../../assets/images/card-5.jpeg';
 import img6 from '../../../assets/images/card-6.jpeg';
 
-import {motion, transform} from 'framer-motion';
+import {motion} from 'framer-motion';
 
 
 

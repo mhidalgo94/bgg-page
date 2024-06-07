@@ -56,7 +56,7 @@
     max-width: 100%;
     pointer-events: none;
     display: inline-block;
-    transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; 
 }
 
 .card-contact:hover img{
@@ -78,7 +78,7 @@
     font-size: 28px;
     font-weight: 400;
     line-height: 108%;
-    color: var(--white);
+    color: var(--primary-blue);
 
 }
 .card-detail-contact  p{

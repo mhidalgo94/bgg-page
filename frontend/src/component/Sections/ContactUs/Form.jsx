@@ -1,8 +1,7 @@
 
-
 export default function () {
   return (
-    <div className="form-container">
+    <div className="form-container"  >
         <label htmlFor="FullName">Full name</label>
         <input type="text" name="FullName" placeholder="Jim Collins"/>
         <label htmlFor="email">Email</label>
