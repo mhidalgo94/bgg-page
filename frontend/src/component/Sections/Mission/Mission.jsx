@@ -1,9 +1,49 @@
 import './styles.css';
 import BannerCard from './BannerCard';
-import svgRefuse from '../../../assets/svg/refuse.png'
+import svgRefuse from '../../../assets/svg/refuse.png';
 import svgReduce from '../../../assets/svg/reduce.png'
-import svgReuse from '../../../assets/svg/reuse.png'
-import svgRecycling from '../../../assets/svg/recycling.png'
+import svgReuse from '../../../assets/svg/reuse.png';
+import svgRecycling from '../../../assets/svg/recycling.png';
+import {motion} from 'framer-motion';
+
+
+// Var for animation
+const title = {
+    initial :{
+        top: '40px',
+        position: 'relative',
+        opacity: 0
+    },
+    animate:{
+        top: '0px',   
+        opacity: 1,
+        transition: {
+            type: "easy",
+            duration: .5,
+            delay: 0.2
+
+        }
+    }
+}
+
+const title2 = {
+    initial :{
+        top: '40px',
+        position: 'relative',
+        opacity: 0
+    },
+    animate:{
+        top: '0px',   
+        opacity: 1,
+        transition: {
+            type: "easy",
+            duration: .5,
+            delay: 0.4
+
+        }
+    }
+}
+
 
 export default function Mission() {
 
@@ -50,8 +90,9 @@ export default function Mission() {
   return (
     <section className='section-mission'>
         <div className='title-section'>
-            <h1 className='title-mission'>Our Mission <br/><span style={{color:"var(--primary-blue)", fontSize:'40px'}}>Our work is divided into 4 core objectives</span></h1>
-            <p>Beaches Go Green, a 501(c)(3) nonprofit, aims to create awareness and education around the waste that we produce and how it impacts our planet. With a focus on single-use plastics and our oceans, we are encouraging people to take small steps to decrease their plastic consumption and overall waste.  We believe that through awareness and education, people will make small changes in their lives that will add up to BIG changes for the planet.</p>
+            <motion.h1 className='title-mission' initial={title.initial} whileInView={title.animate} >Our Mission <br/><motion.span style={{color:"var(--primary-blue)", fontSize:'40px'}} initial={title2.initial} whileInView={title2.animate} >Our work is divided into 4 core objectives</motion.span></motion.h1>
+            <motion.p initial={title2.initial} whileInView={title2.animate} >Beaches Go Green, a 501(c)(3) nonprofit, aims to create awareness and education around the waste that we produce and how it impacts our planet. With a focus on single-use plastics and our oceans, we are encouraging people to take small steps to decrease their plastic consumption and overall waste.  We believe that through awareness and education, people will make small changes in their lives that will add up to BIG changes for the planet.
+            </motion.p>
         </div>
 
         <div className='section-card-banner'> 

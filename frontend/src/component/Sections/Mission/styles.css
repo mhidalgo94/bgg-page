@@ -39,7 +39,6 @@
     border-radius: 16px;
     position:relative;
     overflow: hidden;
-    transition: transform 0.3s ease-in-out;
 }
 .card-banner:hover {
     transform: scale(1.03);
@@ -125,7 +124,6 @@
     object-fit: cover;
     opacity: 0.6;
     object-position: 50% 50%;
-    transition: transform 0.3s
 }
 
 
