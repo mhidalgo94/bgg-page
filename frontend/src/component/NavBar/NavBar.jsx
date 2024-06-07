@@ -32,7 +32,7 @@ export default function NavBar() {
 
   return (
     <>
-        <motion.div className='navbar' initial={navInitial} animate={navAnimate}>
+        <motion.div className='navbar' initial={navInitial} whileInView={navAnimate}>
             <div className='navbar-container'>
                 <ul className='container-logotipo'>
                     <li className='navbar-items'>

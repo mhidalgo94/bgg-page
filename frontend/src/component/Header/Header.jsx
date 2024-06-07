@@ -64,9 +64,9 @@ export default function Header() {
         <div id='overlay'></div>
         <div style={{"paddingTop":"180px"}}>
             <div className='header-content' >
-                <motion.h1 initial={title.initial} animate= {title.animate} >Join  Beaches Go Green to Protect Oceans and Reduce Plastics.</motion.h1>
-                <motion.p initial={text.initial} animate= {text.animate}>Beaches Go Green, a 501(c)(3) non-profit, focuses on educating about waste and its planetary impact, particularly targeting single-use plastics and ocean conservation. We encourage small steps to reduce plastic use and waste, believing that collective minor changes can lead to significant environmental improvements.</motion.p>
-                <motion.div className='container-btn' initial={btnDonate.initial} animate= {btnDonate.animate}>
+                <motion.h1 initial={title.initial} whileInView= {title.animate} >Join  Beaches Go Green to Protect Oceans and Reduce Plastics.</motion.h1>
+                <motion.p initial={text.initial} whileInView= {text.animate}>Beaches Go Green, a 501(c)(3) non-profit, focuses on educating about waste and its planetary impact, particularly targeting single-use plastics and ocean conservation. We encourage small steps to reduce plastic use and waste, believing that collective minor changes can lead to significant environmental improvements.</motion.p>
+                <motion.div className='container-btn' initial={btnDonate.initial} whileInView= {btnDonate.animate}>
                     <a href='#' className='btn-donate-header'>
                         Make a Donation
                     </a>
