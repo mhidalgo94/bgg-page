@@ -50,23 +50,20 @@
 
 
 .btn-contact-us{
-    position: relative;
+    margin: 0 auto;
     z-index: 10;
+    position: relative;
+
     padding: 10px 15px;
-    min-height: 29px;
     border: 1.5px solid var(--accent-light-3);
     color: var(--accent-light-3);
+    text-align: center;
     border-radius: 10px;
-    transition: transform .3s, border-color .3s, color .3s, background-color .3s;
-    transform: scale3d(1, 1, 1.01);
-    font-size: 18px;
-
 }
 
 
 .btn-contact-us:hover{
-    /* transform: scale3d(.95, .95, 1.01); */
-    /* transform: scale(.9);  */
+
     background-color: var(--accent);
     border: var(--accent);
     color: var(--accent-light-1);
