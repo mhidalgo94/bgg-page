@@ -4,10 +4,27 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import SvgBackground from '../../assets/svg/backgound-card.svg'
+import {motion} from 'framer-motion';
 
+// Animation footer
+const footer = {
+    initial :{
+        opacity: 0,
+        top: '100px',
+        position: 'relative'
+    },
+    animate:{
+        top: '0px',
+        opacity: 1,
+        transition: {
+            duration: 0.8,
+            ease: [0, 0.71, 0.2, 1.01]
+        }
+    },
+}
 export default function Footer() {
   return (
-    <div className='footer'>
+    <motion.div className='footer' initial={footer.initial} whileInView={footer.animate}>
         <div className="footer-content-wrapper">
             <div className="footer-content">
                 <a href="#" className="footer-logo-wrapper">
@@ -42,6 +59,6 @@ export default function Footer() {
                 <p>Beaches Go Green</p>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
